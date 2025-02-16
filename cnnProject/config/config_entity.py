@@ -14,3 +14,16 @@ class PrepareBaseModelConfig:
     base_model_path:Path = "artifacts/base_model/base_model.h5"
     updated_model_path:Path = "artifacts/base_model/updated_model.h5"    
     
+@dataclass
+class ModelTrainerConfig:
+    root_dir:Path = "artifacts/trainer"
+    train_model_path:Path = "artifacts/trainer/trained_model.h5"
+    updated_model_path:Path = "artifacts/base_model/updated_model.h5"
+    train_data_path:Path = "artifacts/data_ingestion"   
+@dataclass
+class ModelEvaluationConfig:
+    root_dir:Path = "artifacts/evaluation"
+    train_model_path:Path="artifacts/trainer/trained_model.h5"
+    
+        
+    
