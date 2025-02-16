@@ -8,3 +8,9 @@ class DataIngestionConfig:
     local_data_path:Path = "artifacts/data_ingestion/data.zip"
     unzip_dir:Path = "artifacts/data_ingestion"
     
+@dataclass
+class PrepareBaseModelConfig:
+    root_dir:Path = "artifacts/base_model"
+    base_model_path:Path = "artifacts/base_model/base_model.h5"
+    updated_model_path:Path = "artifacts/base_model/updated_model.h5"    
+    
