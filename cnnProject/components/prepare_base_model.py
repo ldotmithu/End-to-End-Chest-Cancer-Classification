@@ -19,8 +19,9 @@ class PrepareBaseModel:
         self.save_model(file_path=self.base_model.base_model_path,model=self.model)
         logging.info(f"Save the updated model {self.base_model.base_model_path}")
         
-    
         
+    
+    def get_update_model(self):            
         for layer in self.model.layers:
             layer.trainable = False
         

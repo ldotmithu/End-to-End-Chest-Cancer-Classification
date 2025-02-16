@@ -16,5 +16,6 @@ class PrepareBaseModelPipeline:
         pass
     def main(self):
         base_model = PrepareBaseModel()
-        base_model.prepare_base_model()        
+        base_model.prepare_base_model() 
+        base_model.get_update_model()       
         
