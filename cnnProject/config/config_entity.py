@@ -24,6 +24,7 @@ class ModelTrainerConfig:
 class ModelEvaluationConfig:
     root_dir:Path = "artifacts/evaluation"
     train_model_path:Path="artifacts/trainer/trained_model.h5"
+    metrics_name:str ="metrics.json"
     
         
     

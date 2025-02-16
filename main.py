@@ -1,6 +1,6 @@
 from cnnProject import logging
 from cnnProject.Pipeline.Stages_of_Pipeline import (DataIngestionPipeline,PrepareBaseModelPipeline,
-ModelTrainerPipeline)
+ModelTrainerPipeline,ModelEvaluationPipeline)
 
 
 '''
@@ -11,7 +11,7 @@ try:
     logging.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 except Exception as e:
     raise e
-'''
+
 
 try:
     logging.info(">>>>>>>>>>Prepare Base Model>>>>>>>")
@@ -26,6 +26,14 @@ try:
     logging.info(">>>>>>>>>>Prepare Base Model>>>>>>>")
     trainer = ModelTrainerPipeline()
     trainer.main()
+    logging.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+except Exception as e:
+    raise e
+'''
+try:
+    logging.info(">>>>>>>>>>Prepare Base Model>>>>>>>")
+    evaluation = ModelEvaluationPipeline()
+    evaluation.main()
     logging.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 except Exception as e:
     raise e

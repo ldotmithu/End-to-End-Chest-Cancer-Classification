@@ -1,6 +1,7 @@
 from cnnProject.components.data_ingestion import DataIngestion
 from cnnProject.components.prepare_base_model import PrepareBaseModel
 from cnnProject.components.model_trainer import ModelTrainer
+from cnnProject.components.model_evaluation import ModelEvaluation
 
 class DataIngestionPipeline:
     def __init__(self):
@@ -26,3 +27,10 @@ class ModelTrainerPipeline:
     def main(self):
         trainer = ModelTrainer()
         trainer.train()
+        
+class ModelEvaluationPipeline:
+    def __init__(self):
+        pass
+    def main(self):
+        evaluation = ModelEvaluation()
+        evaluation.model_evaluation()        
