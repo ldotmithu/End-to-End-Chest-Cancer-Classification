@@ -19,7 +19,9 @@ liat_of_paths = [
     f"{main_folder}/utils/common.py",
     "app.py",
     "main.py",
-    "params.ymal"
+    "params.ymal",
+    "requirements.txt",
+    "setup.py"
 ]
 
 for path in liat_of_paths:
